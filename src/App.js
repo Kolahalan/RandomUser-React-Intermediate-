@@ -47,9 +47,10 @@ setValue(newPerson.name)
 
   const handleValue = (e) =>{
     if (e.target.classList.contains("icon")){ //Vanilla JS - We target icon classList grp
-      const newValue = e.target.dataset.label; //Vanilla JS - We are obtaining the value of data-label (label) in newValue var
+      const newValue = e.target.dataset.label //Vanilla JS - We are obtaining the value of data-label (label) in newValue var
        console.log(person)
        console.log(newValue) // Value in data-label will be be displayed here 
+      setTitle(newValue)
        setValue(person[newValue]) //Vanilla JS. Read Javascrip Nuggests playlist to understand properly
       }
    
